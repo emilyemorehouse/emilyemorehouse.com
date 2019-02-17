@@ -1,20 +1,42 @@
 {
-  "extends": ["airbnb", "prettier"],
-  "plugins": ["react", "jsx-a11y", "import"],
+  "extends": ["airbnb", "prettier", "prettier/react"],
   "rules": {
-    "react/prefer-stateless-function": "off",
-    "react/prop-types": "off",
-    "react/no-danger": "off",
-    "jsx-a11y/anchor-is-valid": [ "error", {
-      "components": [ "Link" ],
-      "specialLink": [ "hrefLeft", "hrefRight", "to" ],
-      "aspects": [ "noHref", "invalidHref", "preferButton" ]
-    }]
+    "class-methods-use-this": 0,
+    "no-bitwise": 0,
+    "no-console": "off",
+    "no-underscore-dangle": "off",
+    "no-prototype-builtins": 0,
+    "react/jsx-no-bind": 1,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/forbid-prop-types": 0,
+    "react/prop-types": 0,
+    "react/no-danger": 0,
+    "react/no-string-refs": 0,
+    "no-shadow": "off",
+    "react/prefer-stateless-function": 0,
+    "react/no-did-mount-set-state": 0,
+    "semi": ["error", "never"],
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "jsx-a11y/anchor-is-valid": 0,
+    "jsx-a11y/label-has-for": 0,
+    "jsx-a11y/mouse-events-have-key-events": 0,
+    "jsx-a11y/no-noninteractive-element-interactions": 0
   },
-  "settings": {
-    "import/core-modules": []
+  "plugins": ["prettier"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "impliedStrict": true,
+    "ecmaFeatures": {
+      "jsx": true
+    }
   },
   "env": {
-    "browser": true
+    "browser": true,
+    "es6": true,
+    "jest": true,
+    "node": true
   }
 }

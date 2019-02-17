@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import { Link } from "gatsby";
-import { Flex, Text } from "rebass";
-import styled from "styled-components";
+import React, { Component } from 'react'
+import { Link } from 'gatsby'
+import { Flex, Text } from 'rebass'
+import styled from 'styled-components'
 
-import UserLinks from "../UserLinks/UserLinks";
+import UserLinks from '../UserLinks/UserLinks'
 
 const StyledLink = styled(Link)`
   color: black;
@@ -17,18 +17,18 @@ const StyledLink = styled(Link)`
     background-color: black;
     color: white;
   }
-`;
+`
 
 class Footer extends Component {
   render() {
-    const { config } = this.props;
+    const { config } = this.props
 
     return (
       <footer
         style={{
-          justifyContent: "center",
-          alignContent: "center",
-          padding: "10px 5px 5px"
+          justifyContent: 'center',
+          alignContent: 'center',
+          padding: '10px 5px 5px',
         }}
       >
         <Flex alignItems="center" justifyContent="center" mb={20}>
@@ -45,8 +45,8 @@ class Footer extends Component {
           <h4>{config.copyright}</h4>
         </Text>
       </footer>
-    );
+    )
   }
 }
 
-export default Footer;
+export default Footer

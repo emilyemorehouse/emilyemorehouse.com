@@ -1,16 +1,16 @@
-import React from "react";
-import Helmet from "react-helmet";
-import { graphql } from "gatsby";
+import React from 'react'
+import Helmet from 'react-helmet'
+import { graphql } from 'gatsby'
 
-import Layout from "../layout";
-import PostListing from "../components/PostListing/PostListing";
-import SEO from "../components/SEO/SEO";
-import config from "../../data/SiteConfig";
+import Layout from '../layout'
+import PostListing from '../components/PostListing/PostListing'
+import SEO from '../components/SEO/SEO'
+import config from '../../data/SiteConfig'
 
 class Blog extends React.Component {
   render() {
-    const { data } = this.props;
-    const postEdges = data.allMarkdownRemark.edges;
+    const { data } = this.props
+    const postEdges = data.allMarkdownRemark.edges
 
     return (
       <Layout>
@@ -20,11 +20,11 @@ class Blog extends React.Component {
           <PostListing postEdges={postEdges} />
         </div>
       </Layout>
-    );
+    )
   }
 }
 
-export default Blog;
+export default Blog
 
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
@@ -48,4 +48,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`
