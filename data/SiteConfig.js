@@ -13,32 +13,34 @@ const config = {
   postDefaultCategoryID: "Tech", // Default category for posts.
   dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
   dateFormat: "DD/MM/YYYY", // Date format for display.
-  userName: "Advanced User", // Username to display in the author segment.
-  userEmail: "AdvancedUser@example.com", // Email used for RSS feed's author segment
-  userTwitter: "", // Optionally renders "Follow Me" in the UserInfo segment.
-  userLocation: "North Pole, Earth", // User location to display in the author segment.
+  userName: "Emily Morehouse", // Username to display in the author segment.
+  userEmail: "emilyemorehouse@gmail.com", // Email used for RSS feed's author segment
+  userTwitter: "emilyemorehouse", // Optionally renders "Follow Me" in the UserInfo segment.
+  userLocation: "Denver, CO", // User location to display in the author segment.
   userAvatar: "https://api.adorable.io/avatars/150/test.png", // User avatar to display in the author segment.
-  userDescription:
-    "Yeah, I like animals better than people sometimes... Especially dogs. Dogs are the best. Every time you come home, they act like they haven't seen you in a year. And the good thing about dogs... is they got different dogs for different people.", // User description to display in the author segment.
+  userDescription: "👋🏻 I'm Emily: Director of Engineering at Cuttlesoft. Python core developer.", // User description to display in the author segment.
+  userSubdescription:
+    "Lover of programming languages. PyCon 2019 co-chair, 202{0,1} chair. Wife, fur mama. 🦑👩🏻‍💻🐍🐺", // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [
     {
       label: "GitHub",
-      url: "https://github.com/Vagr9K/gatsby-advanced-starter",
+      url: "https://github.com/emilyemorehouse",
       iconClassName: "fa fa-github"
     },
     {
       label: "Twitter",
-      url: "https://twitter.com/Vagr9K",
+      url: "https://twitter.com/emilyemorehouse",
       iconClassName: "fa fa-twitter"
     },
     {
       label: "Email",
-      url: "mailto:vagr9k@gmail.com",
+      url: "mailto:emilyemorehouse@gmail.com",
       iconClassName: "fa fa-envelope"
     }
   ],
-  copyright: "Copyright © 2019. Advanced User", // Copyright string for the footer of the website and RSS feed.
+  visiblePages: ["blog", "about", "speaking"],
+  copyright: "Copyright © 2015-2019. Emily Morehouse", // Copyright string for the footer of the website and RSS feed.
   themeColor: "#c62828", // Used for setting manifest and progress theme colors.
   backgroundColor: "#e0e0e0" // Used for setting manifest background color.
 };
@@ -54,11 +56,9 @@ if (config.pathPrefix === "/") {
 }
 
 // Make sure siteUrl doesn't have an ending forward slash
-if (config.siteUrl.substr(-1) === "/")
-  config.siteUrl = config.siteUrl.slice(0, -1);
+if (config.siteUrl.substr(-1) === "/") config.siteUrl = config.siteUrl.slice(0, -1);
 
 // Make sure siteRss has a starting forward slash
-if (config.siteRss && config.siteRss[0] !== "/")
-  config.siteRss = `/${config.siteRss}`;
+if (config.siteRss && config.siteRss[0] !== "/") config.siteRss = `/${config.siteRss}`;
 
 module.exports = config;
