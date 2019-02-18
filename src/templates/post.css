@@ -255,12 +255,19 @@ pre[class*='language-'] {
 }
 
 .markdown-body a {
-  color: #0366d6;
   text-decoration: none;
+  color: #ad774e;
+}
+
+.markdown-body a:link,
+.markdown-body a::visited {
+  color: #ad774e;
 }
 
 .markdown-body a:hover {
-  text-decoration: underline;
+  background-color: #ad774e;
+  color: white;
+  padding: 2px;
 }
 
 .markdown-body strong {

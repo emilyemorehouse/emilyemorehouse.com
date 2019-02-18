@@ -34,7 +34,7 @@ export default class PostTemplate extends React.Component {
 
         <SEO postPath={slug} postNode={postNode} postSEO />
 
-        <Heading mt={80} mb={10} mx={30} fontFamily="mono" fontSize={[5, 6]} textAlign="center">
+        <Heading mt={80} mb={10} mx="10vw" fontFamily="mono" fontSize={[5, 6]} textAlign="center">
           {post.title}
         </Heading>
 

@@ -19,7 +19,13 @@ class Index extends React.Component {
           style={{ minHeight: 'calc(100vh - 140px)' }}
         >
           <Box mt={80}>
-            <Heading fontFamily="mono" mb={20} mx={20} textAlign="center">
+            <Heading
+              fontFamily="mono"
+              mb={20}
+              mx={20}
+              style={{ maxWidth: 600 }}
+              textAlign="center"
+            >
               {config.userDescription}
             </Heading>
 
