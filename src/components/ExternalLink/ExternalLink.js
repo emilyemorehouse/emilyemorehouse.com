@@ -1,9 +1,10 @@
 import React from 'react'
-import { Link, Text } from 'rebass'
+import { Text } from 'rebass'
 import styled from 'styled-components'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const StyledLink = styled(Link)`
+const StyledLink = styled(OutboundLink)`
   color: ${props => props.color};
 
   &:link,
@@ -21,7 +22,7 @@ const ExternalLink = ({ altColor, color, icon, style, title, url }) => (
   <StyledLink
     altColor={altColor || 'white'}
     color={color || '#ad774e'}
-    href={`/${url}`}
+    href={`${url}`}
     icon={icon}
     style={style}
     target="_blank"
