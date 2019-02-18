@@ -19,6 +19,7 @@
     "gatsby-plugin-nprogress": "2.0.7",
     "gatsby-plugin-offline": "2.0.21",
     "gatsby-plugin-react-helmet": "3.0.5",
+    "gatsby-plugin-s3": "^0.2.4",
     "gatsby-plugin-sharp": "2.0.17",
     "gatsby-plugin-sitemap": "2.0.4",
     "gatsby-plugin-twitter": "2.0.8",
@@ -76,7 +77,8 @@
     "lint:js": "eslint --ext .js,.jsx .",
     "lint:md": "remark content/posts/",
     "write-good": "write-good $(glob 'content/posts/**/*.md')",
-    "format:js": "prettier '**/*.{js,jsx}' --write"
+    "format:js": "prettier '**/*.{js,jsx}' --write",
+    "deploy": "gatsby-plugin-s3 deploy"
   },
   "remarkConfig": {
     "plugins": [

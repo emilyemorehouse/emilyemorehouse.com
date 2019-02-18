@@ -173,5 +173,13 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: 'emilyemorehouse.com',
+        protocol: 'https',
+        hostname: 'www.emilyemorehouse',
+      },
+    },
   ],
 }
