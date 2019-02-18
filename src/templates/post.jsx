@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
-import { Heading, Text } from 'rebass'
+import { Card, Heading } from 'rebass'
 
 import Layout from '../layout'
 import UserInfo from '../components/UserInfo/UserInfo'
@@ -34,13 +34,35 @@ export default class PostTemplate extends React.Component {
 
         <SEO postPath={slug} postNode={postNode} postSEO />
 
-        <Heading mt={80} mb={10} mx="10vw" fontFamily="mono" fontSize={[5, 6]} textAlign="center">
-          {post.title}
-        </Heading>
+        <Card
+          backgroundImage={`url(${post.cover})`}
+          backgroundSize="cover"
+          bg="darkgray"
+          borderRadius={8}
+          mt={80}
+          mx="10vw"
+          p={4}
+          py={6}
+        >
+          <Heading
+            fontFamily="mono"
+            fontSize={[5, 6]}
+            style={{ color: 'white', textShadow: '1px 1px #484A47' }}
+            textAlign="center"
+          >
+            {post.title}
+          </Heading>
 
-        <Heading mb={40} fontFamily="mono" textAlign="center">
-          {post.date}
-        </Heading>
+          <Heading
+            fontFamily="mono"
+            fontSize={[4, 5]}
+            mt={20}
+            style={{ color: 'white', textShadow: '1px 1px #484A47' }}
+            textAlign="center"
+          >
+            {post.date}
+          </Heading>
+        </Card>
 
         <div class="markdown-body">
           <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
