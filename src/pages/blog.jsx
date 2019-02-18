@@ -3,9 +3,9 @@ import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import { Heading } from 'rebass'
 
-import Layout from '../layout'
 import PostListing from '../components/PostListing/PostListing'
 import SEO from '../components/SEO/SEO'
+import Layout from '../layout'
 import config from '../../data/SiteConfig'
 
 class Blog extends React.Component {
@@ -15,16 +15,14 @@ class Blog extends React.Component {
 
     return (
       <Layout>
-        <div className="blog-container">
-          <Helmet title={config.siteTitle} />
-          <SEO />
+        <Helmet title={config.siteTitle} />
+        <SEO />
 
-          <Heading mt={80} mb={40} fontFamily="mono" fontSize={[5, 6]} textAlign="center">
-            Blog Posts
-          </Heading>
+        <Heading mt={80} mb={40} fontFamily="mono" fontSize={[5, 6]} textAlign="center">
+          Blog Posts
+        </Heading>
 
-          <PostListing postEdges={postEdges} />
-        </div>
+        <PostListing postEdges={postEdges} />
       </Layout>
     )
   }
