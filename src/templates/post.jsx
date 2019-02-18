@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
-import { Heading } from 'rebass'
+import { Heading, Text } from 'rebass'
 
 import Layout from '../layout'
 import UserInfo from '../components/UserInfo/UserInfo'
@@ -34,8 +34,12 @@ export default class PostTemplate extends React.Component {
 
         <SEO postPath={slug} postNode={postNode} postSEO />
 
-        <Heading mt={80} mb={40} fontFamily="mono" fontSize={[5, 6]} textAlign="center">
+        <Heading mt={80} mb={10} mx={30} fontFamily="mono" fontSize={[5, 6]} textAlign="center">
           {post.title}
+        </Heading>
+
+        <Heading mb={40} fontFamily="mono" textAlign="center">
+          {post.date}
         </Heading>
 
         <div class="markdown-body">
