@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import { Link } from 'rebass'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import styled from 'styled-components'
 
 import './UserLinks.css'
 
-const StyledLink = styled(Link)`
+const StyledLink = styled(OutboundLink)`
   color: black;
   padding: 5px;
 
