@@ -18,9 +18,13 @@ const config = {
   userTwitter: 'emilyemorehouse', // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: 'Denver, CO', // User location to display in the author segment.
   userAvatar: 'https://api.adorable.io/avatars/150/test.png', // User avatar to display in the author segment.
-  userDescription: "👋🏻 I'm Emily: Director of Engineering at Cuttlesoft. Python core developer.", // User description to display in the author segment.
-  userSubdescription:
-    'Lover of programming languages. PyCon 2019 co-chair, 202{0,1} chair. Wife, fur mama. 🦑👩🏻‍💻🐍🐺', // User description to display in the author segment.
+  userDescription: "👋🏻 I'm Emily: Director of Engineering at Cuttlesoft & Python core developer.", // User description to display in the author segment.
+  userSubdescription: [
+    'Lover of programming languages.',
+    'PyCon 2019 co-chair, 202{0,1} chair.',
+    'Wife, fur mama.',
+    '🦑👩🏻‍💻🐍🐺',
+  ], // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [
     {

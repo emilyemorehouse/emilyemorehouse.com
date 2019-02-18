@@ -23,14 +23,11 @@ class Index extends React.Component {
               {config.userDescription}
             </Heading>
 
-            <Text
-              fontFamily="mono"
-              mt={30}
-              style={{ width: '80vw', maxWidth: 600 }}
-              textAlign="center"
-            >
-              {config.userSubdescription}
-            </Text>
+            {config.userSubdescription.map(sub => (
+              <Text fontFamily="mono" mt={10} mx={10} textAlign="center">
+                {sub}
+              </Text>
+            ))}
           </Box>
         </Flex>
       </Layout>
