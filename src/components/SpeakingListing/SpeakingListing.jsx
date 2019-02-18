@@ -87,6 +87,7 @@ const SpeakingListing = () => (
       talkName="Keynote"
       eventLocation="Austin, TX"
       eventDate="April 13 - 14, 2019"
+      infoLink="https://www.pytexas.org/2019/"
       comingSoon
     />
     <Heading fontFamily="mono" fontSize={[4, 5, 6]}>
