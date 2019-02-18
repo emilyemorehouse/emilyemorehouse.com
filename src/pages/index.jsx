@@ -29,8 +29,8 @@ class Index extends React.Component {
               {config.userDescription}
             </Heading>
 
-            {config.userSubdescription.map(sub => (
-              <Text fontFamily="mono" mt={10} mx={10} textAlign="center">
+            {config.userSubdescription.map((sub, index) => (
+              <Text key={index} fontFamily="mono" mt={10} mx={10} textAlign="center">
                 {sub}
               </Text>
             ))}

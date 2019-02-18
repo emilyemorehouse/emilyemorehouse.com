@@ -33,7 +33,7 @@ class Footer extends Component {
       >
         <Flex alignItems="center" justifyContent="center" mb={20}>
           {config.visiblePages.map(page => (
-            <StyledLink to={`/${page}`}>
+            <StyledLink key={page} to={`/${page}`}>
               <Text fontFamily="mono">{page}</Text>
             </StyledLink>
           ))}
