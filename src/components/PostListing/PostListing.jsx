@@ -1,5 +1,20 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { Card, Heading, Text } from 'rebass'
+import styled from 'styled-components'
+
+const StyledLink = styled(Link)`
+  color: white;
+  padding: 5px;
+
+  &:link,
+  &:visited {
+    color: white;
+  }
+  &:hover {
+    color: #8ef9f3;
+  }
+`
 
 class PostListing extends React.Component {
   getPostList() {
@@ -12,6 +27,7 @@ class PostListing extends React.Component {
         title: postEdge.node.frontmatter.title,
         date: postEdge.node.fields.date,
         excerpt: postEdge.node.excerpt,
+        id: postEdge.node.id,
         timeToRead: postEdge.node.timeToRead,
       })
     })
@@ -23,9 +39,35 @@ class PostListing extends React.Component {
       <div>
         {/* Your post list here. */
         postList.map(post => (
-          <Link to={post.path} key={post.title}>
-            <h1>{post.title}</h1>
-          </Link>
+          <StyledLink to={post.path} key={post.title}>
+            <Card
+              backgroundImage={`url(${post.cover})`}
+              backgroundSize="cover"
+              bg="darkgray"
+              borderRadius={8}
+              m="2vh 10vw"
+              p={4}
+              py={6}
+            >
+              <Heading
+                fontFamily="mono"
+                fontSize={[5, 6]}
+                style={{ textShadow: '1px 1px #484A47', color: 'inherit' }}
+                textAlign="center"
+              >
+                {post.title}
+              </Heading>
+
+              <Text
+                fontFamily="mono"
+                mt={20}
+                style={{ textShadow: '1px 1px #484A47', color: 'inherit' }}
+                textAlign="center"
+              >
+                {post.excerpt}
+              </Text>
+            </Card>
+          </StyledLink>
         ))}
       </div>
     )
