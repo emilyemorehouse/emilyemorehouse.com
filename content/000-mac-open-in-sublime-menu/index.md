@@ -1,8 +1,8 @@
 ---
 title: Adding 'Open in Sublime' to Mac Context Menu
 cover: 'https://images.unsplash.com/photo-1473520844623-167ad716dcae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80'
-date: '07/12/2016'
-excerpt: A quick tutorial on creating a service to open files in Sublime via right-clicking.
+date: '2016-12-07'
+description: A quick tutorial on creating a service to open files in Sublime via right-clicking.
 slug: 'blog/000-mac-open-in-sublime-menu'
 category: 'tutorial'
 tags:
