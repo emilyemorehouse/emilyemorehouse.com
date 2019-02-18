@@ -6,6 +6,7 @@ import styled from 'styled-components'
 const StyledLink = styled(Link)`
   color: white;
   padding: 5px;
+  text-decoration: none;
 
   &:link,
   &:visited {
@@ -52,7 +53,7 @@ class PostListing extends React.Component {
               <Heading
                 fontFamily="mono"
                 fontSize={[5, 6]}
-                style={{ textShadow: '1px 1px #484A47', color: 'inherit' }}
+                style={{ color: 'inherit', textShadow: '1px 1px #484A47' }}
                 textAlign="center"
               >
                 {post.title}
@@ -61,10 +62,10 @@ class PostListing extends React.Component {
               <Text
                 fontFamily="mono"
                 mt={20}
-                style={{ textShadow: '1px 1px #484A47', color: 'inherit' }}
+                style={{ color: 'inherit', textDecoration: 'none', textShadow: '1px 1px #484A47' }}
                 textAlign="center"
               >
-                {post.excerpt}
+                {post.description || post.excerpt}
               </Text>
             </Card>
           </StyledLink>
