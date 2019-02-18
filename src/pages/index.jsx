@@ -3,7 +3,6 @@ import Helmet from 'react-helmet'
 import { Box, Heading, Flex, Text } from 'rebass'
 
 import Layout from '../layout'
-import Footer from '../components/Footer/Footer'
 import SEO from '../components/SEO/SEO'
 import config from '../../data/SiteConfig'
 
@@ -14,14 +13,10 @@ class Index extends React.Component {
         <Helmet title={config.siteTitle} />
         <SEO />
 
-        <Text fontFamily="mono" style={{ position: 'absolute', top: 30, left: 30 }}>
-          {config.userName}
-        </Text>
-
         <Flex
           alignItems="center"
           justifyContent="center"
-          style={{ height: 'calc(100vh - 121px)' }}
+          style={{ height: 'calc(100vh - 140px)' }}
         >
           <Box>
             <Heading fontFamily="mono" style={{ width: '80vw', maxWidth: 600 }} textAlign="center">
@@ -38,8 +33,6 @@ class Index extends React.Component {
             </Text>
           </Box>
         </Flex>
-
-        <Footer config={config} />
       </Layout>
     )
   }
