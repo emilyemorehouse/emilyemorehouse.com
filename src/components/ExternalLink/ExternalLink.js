@@ -12,7 +12,7 @@ const StyledLink = styled(Link)`
   }
   &:hover {
     background-color: ${props => (props.color !== undefined ? props.color : '#ad774e')};
-    color: ${props => (props.altColor !== undefined ? props.altColor : white)};
+    color: ${props => (props.altColor !== undefined ? props.altColor : 'white')};
     padding: ${props => (props.icon !== undefined ? '0px' : '2px')};
   }
 `
