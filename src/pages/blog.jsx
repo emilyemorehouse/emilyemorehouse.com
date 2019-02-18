@@ -1,6 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
+import { Heading } from 'rebass'
 
 import Layout from '../layout'
 import PostListing from '../components/PostListing/PostListing'
@@ -17,6 +18,11 @@ class Blog extends React.Component {
         <div className="blog-container">
           <Helmet title={config.siteTitle} />
           <SEO />
+
+          <Heading mt={80} mb={40} fontFamily="mono" fontSize={[5, 6]} textAlign="center">
+            Blog Posts
+          </Heading>
+
           <PostListing postEdges={postEdges} />
         </div>
       </Layout>
