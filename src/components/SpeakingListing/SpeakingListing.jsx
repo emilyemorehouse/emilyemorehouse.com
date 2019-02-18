@@ -2,7 +2,7 @@ import React from 'react'
 import { Box, Card, Heading, Text } from 'rebass'
 import styled from 'styled-components'
 
-import ExternalLink from '../../components/ExternalLink/ExternalLink'
+import ExternalLink from '../ExternalLink/ExternalLink'
 
 const ListItem = ({
   comingSoon,
@@ -76,17 +76,17 @@ const SpeakingListing = () => (
       2019
     </Heading>
     <ListItem
-      eventName="PyTexas"
-      talkName="Keynote"
-      eventLocation="Austin, TX"
-      eventDate="April 13 - 14, 2019"
-      comingSoon
-    />
-    <ListItem
       eventName="PyCon"
       talkName="What to Expect When You're Expecting (Tutorial)"
       eventLocation="Cleveland, OH"
       eventDate="May 2, 2019"
+      comingSoon
+    />
+    <ListItem
+      eventName="PyTexas"
+      talkName="Keynote"
+      eventLocation="Austin, TX"
+      eventDate="April 13 - 14, 2019"
       comingSoon
     />
     <Heading fontFamily="mono" fontSize={[4, 5, 6]}>
