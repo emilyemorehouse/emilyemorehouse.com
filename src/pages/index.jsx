@@ -16,10 +16,10 @@ class Index extends React.Component {
         <Flex
           alignItems="center"
           justifyContent="center"
-          style={{ height: 'calc(100vh - 140px)' }}
+          style={{ minHeight: 'calc(100vh - 140px)' }}
         >
-          <Box>
-            <Heading fontFamily="mono" style={{ width: '80vw', maxWidth: 600 }} textAlign="center">
+          <Box mt={80}>
+            <Heading fontFamily="mono" mb={20} mx={20} textAlign="center">
               {config.userDescription}
             </Heading>
 
