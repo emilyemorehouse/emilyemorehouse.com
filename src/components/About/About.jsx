@@ -17,7 +17,7 @@ class About extends Component {
             <ExternalLink url="https://www.cuttlesoft.com" title="Cuttlesoft" />, a software
             development company focused on building beauifully designed, highly scalable custom
             software. I'm also a Python Core Developer and help maintain{' '}
-            <ExternalLink url="https://www.github.com/axios/axios" title="Axios" />
+            <ExternalLink url="https://www.github.com/axios/axios" title="Axios" />.
           </Text>
 
           <Text
