@@ -22,7 +22,7 @@ tags:
 - Action: Send hex code
 - Code: 0x1
 
-![screenshot of command-left settings](/img/blog/001-iterm-keybindings/CMD-LEFT.png 'iTerm command-left settings')
+![screenshot of command-left settings](./CMD-LEFT.png 'iTerm command-left settings')
 
 ## Move cursor to the end of the line:
 
@@ -30,7 +30,7 @@ tags:
 - Action: Send hex code
 - Code: 0x5
 
-![screenshot of command-right settings](/img/blog/001-iterm-keybindings/CMD-RIGHT.png 'iTerm command-right settings')
+![screenshot of command-right settings](./CMD-RIGHT.png 'iTerm command-right settings')
 
 ## Move cursor left one word:
 
@@ -38,7 +38,7 @@ tags:
 - Action: Send escape sequence
 - Code: b (appears as ^[b in list view)
 
-![screenshot of option-left settings](/img/blog/001-iterm-keybindings/OPT-LEFT.png 'iTerm option-left settings')
+![screenshot of option-left settings](./OPT-LEFT.png 'iTerm option-left settings')
 
 ## Move cursor right one word:
 
@@ -46,7 +46,7 @@ tags:
 - Action: Send escape sequence
 - Code: f (appears as ^[f in list view)
 
-![screenshot of option-right settings](/img/blog/001-iterm-keybindings/OPT-RIGHT.png 'iTerm option-right settings')
+![screenshot of option-right settings](./OPT-RIGHT.png 'iTerm option-right settings')
 
 ## Delete from the cursor the the beginning of the line:
 
@@ -54,7 +54,7 @@ tags:
 - Action: Send hex code
 - Code: r0x15
 
-![screenshot of command-delete settings](/img/blog/001-iterm-keybindings/CMD-DEL.png 'iTerm command-delete settings')
+![screenshot of command-delete settings](./CMD-DEL.png 'iTerm command-delete settings')
 
 ## Delete from the cursor the the beginning of the word:
 
@@ -62,11 +62,11 @@ tags:
 - Action: Send hex code
 - Code: 17
 
-![screenshot of option-delete settings](/img/blog/001-iterm-keybindings/OPT-DEL.png 'iTerm option-delete settings')
+![screenshot of option-delete settings](./OPT-DEL.png 'iTerm option-delete settings')
 
 ## Here's a list of all of my current keybindings:
 
-![screenshot of all keybindings](/img/blog/001-iterm-keybindings/ALL.png 'All Current iTerm Key Mappings')
+![screenshot of all keybindings](./ALL.png 'All Current iTerm Key Mappings')
 
 PS: `⌃⌘Space` on a Mac brings up the technical symbols menu and I just learned about it writing this post. Get at it.
-![screenshot of technical symbols picker](/img/blog/001-iterm-keybindings/technical-symbols.png 'Technical symbols on Mac OSX')
+![screenshot of technical symbols picker](./technical-symbols.png 'Technical symbols on Mac OSX')

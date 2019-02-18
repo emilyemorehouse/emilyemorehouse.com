@@ -1,6 +1,6 @@
 ---
 title: Git Hooked
-cover: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80'
+cover: 'https://images.unsplash.com/photo-1495482237874-2abe1e1c92dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80'
 date: '2018-01-27'
 description: Introduction to Git Hooks
 slug: 'blog/012-git-hooked'

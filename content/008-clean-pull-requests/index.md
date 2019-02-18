@@ -3,7 +3,7 @@ title: Clean Pull Requests with Git
 cover: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80'
 date: '2017-01-24'
 description: Quick tips on ensuring that your PRs are clean and easy to merge.
-slug: 'blog/001-iterm-keybindings'
+slug: 'blog/008-clean-pull-requests'
 category: 'tutorial'
 tags:
   - osx

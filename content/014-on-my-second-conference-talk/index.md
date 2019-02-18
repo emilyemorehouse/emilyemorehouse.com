@@ -3,7 +3,7 @@ title: On My Second Conference talk
 cover: 'https://images.unsplash.com/photo-1468589802575-eca3c023c8fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3125&q=80'
 date: '2018-06-25'
 description: Reflections and tips that I learned from proposing, planning, and giving my SECOND conference talk.
-slug: 'blog/001-iterm-keybindings'
+slug: 'blog/014-on-my-second-conference-talk'
 category: 'story'
 tags:
   - conferences
