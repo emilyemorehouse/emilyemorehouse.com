@@ -12,7 +12,7 @@ tags:
 
 Last weekend, I took some time to fully rebuild my personal blog from “scratch”.
 
-I tossed my [Lektor](https://www.getlektor.com/) site and rebuilt it with with
+I tossed my [Lektor](https://www.getlektor.com/) site and rebuilt it with
 [GatsbyJS](https://www.gatsbyjs.org), [GraphQL](https://graphql.org/) and
 [Rebass](https://rebassjs.org/). It took less than 10 hours to implement and deploy! That time was
 broken into:
