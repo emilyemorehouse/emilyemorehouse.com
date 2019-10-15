@@ -15,7 +15,7 @@ class About extends Component {
           >
             I'm located in Denver, CO as the Cofounder and Director of Engineering at{' '}
             <ExternalLink url="https://www.cuttlesoft.com" title="Cuttlesoft" />, a software
-            development company focused on building beauifully designed, highly scalable custom
+            development company focused on building beautifully designed, highly scalable custom
             software. I'm also a Python Core Developer and help maintain{' '}
             <ExternalLink url="https://www.github.com/axios/axios" title="Axios" />.
           </Text>
