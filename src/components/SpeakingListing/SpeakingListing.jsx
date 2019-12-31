@@ -4,18 +4,31 @@ import styled from 'styled-components'
 
 import ExternalLink from '../ExternalLink/ExternalLink'
 
+function getBackgroundColor({ comingSoon, important }) {
+  if (comingSoon && important) {
+    return 'rgba(173, 119, 78, 0.4)'
+  } else if (comingSoon) {
+    return 'rgba(173, 119, 78, 0.4)'
+  } else if (important) {
+    return 'rgba(142, 249, 243, 0.8)'
+  } else {
+    return 'rgba(142, 249, 243, 0.4)'
+  }
+}
+
 const ListItem = ({
   comingSoon,
   eventDate,
   eventLocation,
   eventName,
+  important,
   infoLink,
   slidesLink,
   talkName,
   videoLink,
 }) => (
   <Card
-    bg={comingSoon ? 'rgba(173, 119, 78, 0.4)' : 'rgba(142, 249, 243, 0.4)'}
+    bg={getBackgroundColor({ comingSoon, important })}
     borderColor="black"
     border={2}
     my={3}
@@ -76,11 +89,18 @@ const SpeakingListing = () => (
       2019
     </Heading>
     <ListItem
+      eventName="Boulder Python Meetup"
+      talkName="Understanding Assignment Expressions"
+      eventLocation="Denver, CO"
+      eventDate="May 15, 2019"
+    />
+    <ListItem
       eventName="PyCon"
       talkName="What to Expect When You're Expecting (Tutorial)"
       eventLocation="Cleveland, OH"
       eventDate="May 2, 2019"
-      comingSoon
+      infoLink="https://us.pycon.org/2019/schedule/presentation/85/"
+      videoLink="https://www.youtube.com/watch?v=AAyQpMmbIKU"
     />
     <ListItem
       eventName="PyTexas"
@@ -88,7 +108,8 @@ const SpeakingListing = () => (
       eventLocation="Austin, TX"
       eventDate="April 13 - 14, 2019"
       infoLink="https://www.pytexas.org/2019/"
-      comingSoon
+      videoLink="https://www.youtube.com/watch?v=rOzUMQW4p0Y"
+      important
     />
     <Heading fontFamily="mono" fontSize={[4, 5, 6]}>
       2018
