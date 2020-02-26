@@ -54,7 +54,7 @@ const config = {
     },
   ],
   visiblePages: ['blog', 'about', 'speaking', 'contact'],
-  copyright: 'Copyright © 2015-2019. Emily Morehouse', // Copyright string for the footer of the website and RSS feed.
+  copyright: 'Copyright © 2015-2020. Emily Morehouse', // Copyright string for the footer of the website and RSS feed.
   themeColor: '#c62828', // Used for setting manifest and progress theme colors.
   backgroundColor: '#e0e0e0', // Used for setting manifest background color.
 }

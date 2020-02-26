@@ -26,7 +26,6 @@ const ListItem = ({
 )
 
 const sendEmail = (cta) => {
-  console.log(cta)
   let subject = null
   switch (cta) {
     case 'ask':
