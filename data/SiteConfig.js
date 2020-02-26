@@ -49,11 +49,11 @@ const config = {
     },
     {
       label: 'Email',
-      url: 'mailto:emilyemorehouse@gmail.com',
+      url: 'mailto:e.morehouse@cuttlesoft.com?subject=[Inquiry] emilyemorehouse.com',
       iconClassName: 'envelope',
     },
   ],
-  visiblePages: ['blog', 'about', 'speaking'],
+  visiblePages: ['blog', 'about', 'speaking', 'contact'],
   copyright: 'Copyright © 2015-2019. Emily Morehouse', // Copyright string for the footer of the website and RSS feed.
   themeColor: '#c62828', // Used for setting manifest and progress theme colors.
   backgroundColor: '#e0e0e0', // Used for setting manifest background color.
